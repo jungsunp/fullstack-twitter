@@ -15,5 +15,5 @@ app.get('/', function(req, res) {
 });
 
 app.listen(PORT, function(req, res) {
-  console.log('server listening');
+  console.log('server listening at http://localhost:' + PORT + '/');
 });
