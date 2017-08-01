@@ -5,6 +5,7 @@ var counter = 0;
 function add (name, content) {
   counter++;
   data.push({ name: name, content: content, id: counter });
+  return data[data.length - 1];
 }
 
 function list () {
