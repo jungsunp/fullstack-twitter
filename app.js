@@ -21,14 +21,11 @@ nunjucks.configure('views', { noCache: true });
 //   people: [{name: 'Gandolf'}, {name: 'Frodo'}, {name: 'Hermione'}, {name: 'Harry Potter'}]
 // }));
 
-app.get('/', function(req, res) {
-  // res.send('Welcome to twitter.js!');
-  res.render( 'index', {title: 'Hall of Fame', people: people} );
-});
+// app.get('/', function(req, res) {
+//   // res.send('Welcome to twitter.js!');
+//   res.render( 'index', {title: 'Hall of Fame', people: people} );
+// });
 
 app.listen(PORT, function(req, res) {
   console.log('server listening at http://localhost:' + PORT + '/');
 });
-
-
-
